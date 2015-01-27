@@ -29,10 +29,10 @@ classdef DBMaster < handle
             disp( datestr(now))
             obj.UpdateCache;
             close(obj.FtpObject);
-            %obj.processMissFiles;
+            obj.processMissFiles;
             %if ~isempty(obj.MissFiles)
-               % DataBase.MinutesExtractor
-               % DataBase.ContractInfo
+                DataBase.MinutesExtractor
+                DataBase.ContractInfo
             %end
             disp('FINISH DATABASE UPDATE')
             disp(datestr(now))
